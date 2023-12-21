@@ -43,8 +43,20 @@ const Register = () => {
           <input
             type="text"
             className="form-control"
-            placeholder="Nombre"
+            placeholder="Nombre Completo"
             {...register("name", { required: true })}
+          />
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Edad"
+            {...register("age", { required: true })}
+          />
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Url Imagen"
+            {...register("image", { required: true })}
           />
           <input
             type="number"
