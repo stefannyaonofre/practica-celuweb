@@ -27,7 +27,6 @@ export const createUser = (newUser) => {
 export const loginWithEmailAndPassword = (loggedUser) => {
     return async (dispatch) => {
         try {
-            console.log(loggedUser)
             const {user} = await signInWithEmailAndPassword(
                 firebaseAuth,
                 loggedUser.email,
@@ -39,5 +38,12 @@ export const loginWithEmailAndPassword = (loggedUser) => {
         } catch (error) {
             console.log(error)
         }
+    }
+}
+
+export const signOff = () => {
+    return (dispatch) => {
+        dispatch(setIsAuthenticates());
+        dispatch(setUserLogged(null));
     }
 }

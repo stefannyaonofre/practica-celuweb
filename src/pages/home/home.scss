@@ -1,0 +1,57 @@
+@import '../../assets/styles/variables.scss';
+
+.main__home {
+    display: flex;
+    width: 100%;
+
+    &__info {
+        width: 25%;
+        height: 100vh;
+        background: linear-gradient(to right, $pistachio, $tea-green);
+
+        &__perfil {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0;
+            align-items: center;
+
+            &__image {
+                width: 50px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            &__button {
+                padding: 5px 8px;
+                border-radius: 5px;
+                border: none;
+                background-color: $kelly-green;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__map {
+        width: 75%;
+        padding: 10px;
+        text-align: center;
+
+        &__container {
+            border: 1px solid $kelly-green;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+
+            &__mapa {
+                width: 650px;
+                height: 550px;
+            }
+        }
+    }
+}
