@@ -15,7 +15,10 @@ export const authSlice = createSlice({
         setUserLogged: (state, action) => {
             state.userLogged = action.payload;
         },
+        setUpdateUser: (state, action) => {
+            state.userLogged = {...state.userLogged, ...action.payload}
+        }
     }
 })
 
-export const {setIsAuthenticates, setUserLogged} = authSlice.actions
+export const {setIsAuthenticates, setUserLogged, setUpdateUser} = authSlice.actions

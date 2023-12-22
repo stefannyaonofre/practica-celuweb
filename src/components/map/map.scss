@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables.scss';
+
+.main__map {
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+
+    &__container {
+        border: 1px solid $kelly-green;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+
+        &__mapa {
+            width: 650px;
+            height: 550px;
+        }
+    }
+}
